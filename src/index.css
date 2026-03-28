@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-future: "Orbitron", sans-serif;
+
+  --color-primary: #a855f7; /* Purple 500 */
+  --color-primary-dark: #7e22ce; /* Purple 700 */
+  --color-primary-light: #c084fc; /* Purple 400 */
+  --color-accent: #d8b4fe; /* Purple 300 */
+  
+  --color-create: #a855f7; /* Overriding previous orange with purple */
+  --color-end: #d8b4fe;
+  --color-nether: #7e22ce;
+  --color-farmer: #9333ea;
+}
+
+@layer base {
+  body {
+    @apply bg-[#030014] text-[#f5f5f5] font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+.primary-glow {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
